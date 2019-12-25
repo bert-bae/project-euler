@@ -17,7 +17,6 @@ def fibonacciSum (filterLogic):
     nextNum = fibNumbers[len(fibNumbers) - 2] + fibNumbers[len(fibNumbers) - 1]
     fibNumbers.append(nextNum)
 
-  print(sum(filter(filterLogic, fibNumbers)))
   return sum(filter(filterLogic, fibNumbers))
 
-fibonacciSum(filterEvenNum)
+print(fibonacciSum(filterEvenNum))
