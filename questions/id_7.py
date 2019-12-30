@@ -2,17 +2,7 @@
 
 # What is the 10 001st prime number?
 
-def isPrime(num):
-  if num < 2:
-    return False
-  if num == 2:
-    return True
-  if num % 2 == 0:
-    return False
-  for i in range(3, num):
-    if num % i == 0:
-      return False
-  return True
+from utils.math_utils import isPrime
 
 def getNthPrime(num):
   checked = [2, 3]
